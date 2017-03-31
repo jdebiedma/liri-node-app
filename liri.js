@@ -1,3 +1,14 @@
+//USE npm init FOR ALL YOUR FILES
+
+//request-npm-demo
+//enter, enter, enter, enter, 
+//git repo: here you do git clone for whatever your project is
+//keywords: lol
+//author: your name
+//license: GPL-2.0
+//this okay? yes
+//npm install --save request
+
 var myTwitterKeys = require("./keys.js");
 
 var consumerKey = myTwitterKeys.twitterKeys.consumer_key;
