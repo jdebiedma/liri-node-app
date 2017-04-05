@@ -37,7 +37,9 @@ var command = process.argv[2];
 
 var numTweets = 20;
 
-if (command === "my-tweets") {
+if (command === "my-tweets") { 
+function myTweets() {
+
 
 	var params = {screen_name: 'liquidhbox'};
 	client.get('statuses/user_timeline', params, function(error, tweets, response) {
@@ -74,10 +76,14 @@ if (command === "my-tweets") {
 	    	
 	  }
 	});
-
+}
+myTweets();
 }
 
 if (command === "spotify-this-song") {
+
+function spotifyThis(){
+
 
 	if (process.argv[3]) {
 
@@ -128,11 +134,13 @@ if (command === "spotify-this-song") {
 	     
 		});
 	}
-
-
+}
+spotifyThis();
 }
 
 if (command === "movie-this")	{
+function movieThis () {
+
 
 	if (process.argv[3]) {
 
@@ -233,5 +241,11 @@ if (command === "movie-this")	{
 
 
 	}
+}
+movieThis();
+}
 
+if (command === "do-what-it-says") {
+
+	
 }
